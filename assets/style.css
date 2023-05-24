@@ -19,4 +19,19 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: bisque;
+
+}
+
+.navigation_container {
+    border: solid;
+    /* Border is to only highlight the area - remove after*/
+    position: sticky;
+    top: 0;
+}
+
+header {
+    border: solid;
+    position: sticky;
+    top: 0;
+    /* Sticky positon only works on header and with top 0 !*/
 }
