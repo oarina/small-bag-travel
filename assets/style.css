@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -13,14 +13,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: bisque;
 }
 
 #logo {
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: bisque;
+    /* BUG: This colour would override the hover rule color: bisque;
+    by targeting the color for <a> under navigation class that fixes the issue--*/
 }
 
 /* --------------------------------------------Making navigation sticky */
@@ -40,7 +40,6 @@ header {
     display: flex;
     /* puts logo and menu items in a row */
     align-items: center;
-
 }
 
 .menu {
@@ -48,14 +47,34 @@ header {
     /* both menu and navigation must have a flex, as menu 
     has it's own divs with menu items in it that it needs to 
     align horisontally*/
+    justify-content: space-evenly;
+
+}
+
+.item {
+    padding: 6px;
+    border: 6px;
 }
 
 .logo {
     flex-grow: 1;
     /* this puts logo on the left and menu items on the right*/
+    padding: 3px;
+}
+
+.navigation a {
+    color: bisque;
+}
+
+a:hover {
+    color: brown;
+    /* if I don't target a under navigation ID the hover rule will 
+               break and not apply*/
 }
 
 /* --------------------------------------------Add rule for 450px screen */
+
+
 
 @media screen and (max-width:450px) {
 
@@ -63,3 +82,4 @@ header {
         flex-direction: column;
         /* this puts logo on the top and menu items on the bottom*/
     }
+}
