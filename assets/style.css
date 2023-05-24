@@ -9,7 +9,7 @@
     /* To remove the underline from links */
 }
 
-/* Basic body and logo design */
+/* --------------------------------------------Basic body and logo design */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -23,7 +23,7 @@ body {
     color: bisque;
 }
 
-/* Making navigation sticky */
+/* --------------------------------------------Making navigation sticky */
 
 header {
     border: solid;
@@ -32,7 +32,7 @@ header {
     /* Sticky positon only works on header and with top 0 !*/
 }
 
-/* Styling navigaiton bar */
+/* --------------------------------------------Styling navigaiton bar */
 
 .navigation {
     border: solid;
@@ -54,3 +54,12 @@ header {
     flex-grow: 1;
     /* this puts logo on the left and menu items on the right*/
 }
+
+/* --------------------------------------------Add rule for 450px screen */
+
+@media screen and (max-width:450px) {
+
+    .navigation {
+        flex-direction: column;
+        /* this puts logo on the top and menu items on the bottom*/
+    }
