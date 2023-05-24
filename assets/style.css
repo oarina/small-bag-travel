@@ -9,6 +9,8 @@
     /* To remove the underline from links */
 }
 
+/* Basic body and logo design */
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: bisque;
@@ -19,19 +21,36 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: bisque;
-
 }
 
-.navigation_container {
-    border: solid;
-    /* Border is to only highlight the area - remove after*/
-    position: sticky;
-    top: 0;
-}
+/* Making navigation sticky */
 
 header {
     border: solid;
     position: sticky;
     top: 0;
     /* Sticky positon only works on header and with top 0 !*/
+}
+
+/* Styling navigaiton bar */
+
+.navigation {
+    border: solid;
+    /* Border is to only highlight the area - remove after*/
+    display: flex;
+    /* puts logo and menu items in a row */
+    align-items: center;
+
+}
+
+.menu {
+    display: flex;
+    /* both menu and navigation must have a flex, as menu 
+    has it's own divs with menu items in it that it needs to 
+    align horisontally*/
+}
+
+.logo {
+    flex-grow: 1;
+    /* this puts logo on the left and menu items on the right*/
 }
