@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgb(95, 95, 95);
+    text-decoration: none;
+    /* To remove the underline from links */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: bisque;
+}
+
