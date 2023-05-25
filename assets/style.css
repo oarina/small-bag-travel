@@ -20,7 +20,7 @@ h2 {
     padding: 6px;
     border: 6px;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
     by targeting the color for <a> under navigation class that fixes the issue--*/
@@ -109,11 +109,12 @@ a:hover {
 
 
 
-@media screen and (max-width:465px) {
+@media screen and (max-width:605px) {
 
     .navigation {
         flex-direction: column;
-        /* this puts logo on the top and menu items on the bottom*/
+        /* this puts logo on the top and menu items on the bottom
+        when it breaks at 605 all is optimised to look good at 375px*/
     }
 }
 
@@ -153,6 +154,10 @@ a:hover {
     /*Adding flex in the container to center the solgan */
 }
 
+.slogan-container h2 {
+    letter-spacing: 3px;
+}
+
 @media screen and (max-width:850px) {
     .intro-container {
         flex-direction: column;
@@ -160,7 +165,8 @@ a:hover {
 
     .slogan-container {
         width: 307px;
-        height: 307px;
+        height: 400px;
+        text-align: justify;
     }
 }
 
