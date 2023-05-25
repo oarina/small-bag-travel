@@ -255,6 +255,10 @@ fieldset {
   .article p {
     margin-bottom: 20px;
   }
+
+  .article h2 {
+    margin-bottom: 20px;
+  }
   
   .image-container {
     text-align: center;
