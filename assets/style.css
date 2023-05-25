@@ -29,18 +29,24 @@ h2 {
 /*---------------------------------------------Footer */ 
 
 footer {
-    position: sticky;
+    position: fixed;
+    left: 0;
     bottom: 0;
-    /* Sticky positon only works on fotter and with bottom 0 !*/
+    right: 0;
+    /* Sticky positon with bottom 0 still has the footer in a middle of a page. 
+    Position fixed with left, right, bottom as 0 has a sticky property !*/
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 6px;
+
 }
 
 footer a {
     color: bisque;
     padding: 6px;
     margin: 6px;
+
+
 }
 
 /* --------------------------------------------Making navigation sticky */
