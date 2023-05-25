@@ -29,24 +29,18 @@ h2 {
 /*---------------------------------------------Footer */ 
 
 footer {
-    position: fixed;
-    left: 0;
+    position: sticky;
     bottom: 0;
-    right: 0;
-    /* Sticky positon with bottom 0 still has the footer in a middle of a page. 
-    Position fixed with left, right, bottom as 0 has a sticky property !*/
+    /* Sticky positon only works on fotter and with bottom 0 !*/
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 6px;
-
 }
 
 footer a {
     color: bisque;
     padding: 6px;
     margin: 6px;
-
-
 }
 
 /* --------------------------------------------Making navigation sticky */
@@ -55,18 +49,17 @@ header {
     position: sticky;
     top: 0;
     /* Sticky positon only works on header and with top 0 !*/
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* --------------------------------------------Styling navigaiton bar */
 
 .navigation {
-
+    border: solid;
     /* Border is to only highlight the area - remove after*/
     display: flex;
     /* puts logo and menu items in a row */
     align-items: center;
-    padding: 6px;
 }
 
 .menu-container {
@@ -99,17 +92,11 @@ a:hover {
                break and not apply*/
 }
 
-.menu-container #active {
-    color: brown
-    /* This will color the menu item and show you the pauge user is currently on*/
-}
-
-
 /* --------------------------------------------Add rule for 450px screen */
 
 
 
-@media screen and (max-width:465px) {
+@media screen and (max-width:450px) {
 
     .navigation {
         flex-direction: column;
@@ -165,72 +152,3 @@ a:hover {
 }
 
 /* Adding rule to collapse slogan under the picture in order not to skew the text */
-
-
-/**---------------------------------------------Form */
-/*
-form {
-    background-color: grey;
-}
-
-legend {
-    background-color: yellow;
-}
-
-fieldset {
-    background-color: aqua;
-}
-
-.subscription-container {
-    background-color: orange;
-} */
-
-
-
-
-.form-box-container {
-    /*background-color: grey;*/
-    width: 350px;
-    height: 450px;
-    box-shadow: 0 0 40px 0 #000000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); 
-    position: absolute;
-    /* adding a gentle black shadow around the box */
-
-}
-
-#input-field {
-    width: 200px;
-    height: 30px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #040404;
-    border-radius: 5px; /* gives the field edges a little bit of a curve */
-    outline: none;
-    
-    
-}
-
-#textarea {
-    border-radius: 7px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #040404;
-    
-}
-
-#submit {
-    background-color: grey ;
-    width: 100px;
-    height: 30px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid #040404;
-    border-radius: 5px;
-    
-}
