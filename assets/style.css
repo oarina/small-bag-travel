@@ -88,6 +88,15 @@ a:hover {
     }
 }
 
+/*---------------------------------------------Footer */ 
+
+footer {
+    position: sticky;
+    bottom: 0;
+    /* Sticky positon only works on fotter and with bottom 0 !*/
+    text-align: center;
+    background-color: bisque;
+}
 
 /* --------------------------------------------Styling Hero/Intro section */
 
