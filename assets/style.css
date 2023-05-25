@@ -26,10 +26,26 @@ h2 {
     by targeting the color for <a> under navigation class that fixes the issue--*/
 }
 
+/*---------------------------------------------Footer */ 
+
+footer {
+    position: sticky;
+    bottom: 0;
+    /* Sticky positon only works on fotter and with bottom 0 !*/
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+}
+
+footer a {
+    color: bisque;
+    padding: 6px;
+    margin: 6px;
+}
+
 /* --------------------------------------------Making navigation sticky */
 
 header {
-    border: solid;
     position: sticky;
     top: 0;
     /* Sticky positon only works on header and with top 0 !*/
@@ -86,16 +102,6 @@ a:hover {
         flex-direction: column;
         /* this puts logo on the top and menu items on the bottom*/
     }
-}
-
-/*---------------------------------------------Footer */ 
-
-footer {
-    position: sticky;
-    bottom: 0;
-    /* Sticky positon only works on fotter and with bottom 0 !*/
-    text-align: center;
-    background-color: bisque;
 }
 
 /* --------------------------------------------Styling Hero/Intro section */
