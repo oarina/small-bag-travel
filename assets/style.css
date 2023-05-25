@@ -99,6 +99,12 @@ a:hover {
                break and not apply*/
 }
 
+.menu-container #active {
+    color: brown
+    /* This will color the menu item and show you the pauge user is currently on*/
+}
+
+
 /* --------------------------------------------Add rule for 450px screen */
 
 
