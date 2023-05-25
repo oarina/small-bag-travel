@@ -237,12 +237,29 @@ fieldset {
 
 /*----------------------------------------------Article */
 
-p {
-font-size: 16px;
-  line-height: 1.5;
-  padding: 20px;
-}
 
-.image {
-    width: 100%;
-}
+  /* 2nd attempt at article */
+
+  .article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .article p {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-container p {
+    font-style: italic;
+
+  }
