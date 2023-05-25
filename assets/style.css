@@ -36,7 +36,7 @@ footer {
     /* Sticky positon with bottom 0 still has the footer in a middle of a page. 
     Position fixed with left, right, bottom as 0 has a sticky property !*/
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 6px;
 
 }
@@ -55,17 +55,18 @@ header {
     position: sticky;
     top: 0;
     /* Sticky positon only works on header and with top 0 !*/
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* --------------------------------------------Styling navigaiton bar */
 
 .navigation {
-    border: solid;
+
     /* Border is to only highlight the area - remove after*/
     display: flex;
     /* puts logo and menu items in a row */
     align-items: center;
+    padding: 6px;
 }
 
 .menu-container {
