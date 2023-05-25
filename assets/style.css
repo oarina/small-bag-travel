@@ -242,3 +242,7 @@ font-size: 16px;
   line-height: 1.5;
   padding: 20px;
 }
+
+.image {
+    width: 100%;
+}
