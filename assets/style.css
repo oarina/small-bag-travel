@@ -24,6 +24,7 @@ h2 {
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
     by targeting the color for <a> under navigation class that fixes the issue--*/
+    text-shadow: 0px  2px 0px  #686868;
 }
 
 /*---------------------------------------------Footer */ 
@@ -37,12 +38,13 @@ footer {
     Position fixed with left, right, bottom as 0 has a sticky property !*/
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
+     box-shadow: 0 0 20px 0  #686868;
     padding: 6px;
 
 }
 
 footer a {
-    color: bisque;
+    color: white;
     padding: 6px;
     margin: 6px;
 
@@ -56,6 +58,7 @@ header {
     top: 0;
     /* Sticky positon only works on header and with top 0 !*/
     background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px 0  #686868;
 }
 
 /* --------------------------------------------Styling navigaiton bar */
@@ -90,18 +93,18 @@ header {
 }
 
 .navigation a {
-    color: bisque;
+    color: white;
 }
 
 a:hover {
-    color: brown;
+    color:  #686868;
     /* if I don't target a under navigation ID the hover rule will 
                break and not apply*/
 }
 
 .menu-container #active {
-    color: brown
-    /* This will color the menu item and show you the pauge user is currently on*/
+    color:  #686868
+    /* This will color the menu item and show you the pauge user is currently on */
 }
 
 
@@ -128,7 +131,8 @@ a:hover {
     justify-content: space-around;
     /*this will always position brian and slogan evenly no matter what screen
     width you change it to */
-    align-items: center;
+    align-items: center; 
+    
 }
 
 .brian {
@@ -138,7 +142,7 @@ a:hover {
     border-width: 6px;
     /* creates a thinker circle around Brian also did not add padding or border
     here because I want Brian to be flush to the circle */
-    border-color: bisque
+    border-color:  #686868
 }
 
 .slogan-container {
@@ -156,6 +160,11 @@ a:hover {
 
 .slogan-container h2 {
     letter-spacing: 3px;
+    text-shadow: 0px  2px 0px  #686868 ; /*
+    giving slogan a stenciled grafiti looking shadow to also
+    match with the header and footer shadow */
+
+    
 }
 
 @media screen and (max-width:850px) {
@@ -198,24 +207,29 @@ fieldset {
     /*background-color: grey;*/
     width: 350px;
     height: 450px;
-    box-shadow: 0 0 40px 0 #000000;
+    box-shadow: 0 0 20px 0 #686868;
+     /* adding a gentle black shadow around the box */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%); 
     position: absolute;
-    /* adding a gentle black shadow around the box */
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex and centre values put the form in the centre of the div */
 }
 
 #input-field {
-    width: 200px;
+    width: 208px;
     height: 30px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid #040404;
+    border: 1px solid  #686868;
     border-radius: 5px; /* gives the field edges a little bit of a curve */
     outline: none;
+   
+    
     
     
 }
@@ -225,18 +239,18 @@ fieldset {
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid #040404;
+    border: 1px solid  #686868;
     
 }
 
 #submit {
-    background-color: grey ;
+    background-color:  #686868 ;
     width: 100px;
     height: 30px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid #040404;
+    border: 1px solid  #686868;
     border-radius: 5px;
     
 }
