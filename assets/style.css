@@ -299,6 +299,7 @@ fieldset {
 
   .snippet-container {
     width: 850px;
+    height: 250px;
     padding: 6px;
     border: 6px;
     background-color: grey;
@@ -308,26 +309,28 @@ fieldset {
     display: flex; /* Put snippet divs in a row inside the container */
     justify-content: space-evenly;
     
-    
+  }
+
 @media screen and (max-width:850px) {
 
     .snippet-container {
-        width: 375px;
-        height: 600px;
+        width: 300px;
+        height: 100%;
         flex-direction: column;
     }
 }
 
 @media screen and (max-width:600px) {
-    .snippet {
-        colour: green ;
+    .snippet-container .snippet {
+        color: green;
     }
+
+    .snippet {
+        padding: 6px;
+        border: 6px;
+        border: solid;
+      }
+
 }
 
-
-  }
-  .snippet {
-    padding: 6px;
-    border: 6px;
-    border: solid;
-  }
+ 
