@@ -12,7 +12,9 @@
 /* --------------------------------------------Basic body and logo design */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+   /*  font-family: 'Open Sans', sans-serif; */
+   font-family: sans-serif;
+   font-size: large;
 }
 
 #logo,
@@ -126,8 +128,7 @@ a:hover {
 /* --------------------------------------------Styling Hero/Intro section */
 
 .intro-container {
-    margin-top: 26px;
-    margin-bottom: 26px;
+
     padding: 16px 6px 6px;
     border: 6px;
     display: flex;
@@ -145,6 +146,9 @@ a:hover {
 }
 
 .brian {
+
+    margin: 26px;
+
     border-radius: 50%;
     /* This makes the square image turn into a circle*/
     border-style: solid;
@@ -215,6 +219,7 @@ fieldset {
 
 .form-box-container {
     /*background-color: grey;*/
+    margin-top: 26px;
     width: 350px;
     height: 450px;
     box-shadow: 0 0 20px 0 #686868;
@@ -335,6 +340,7 @@ fieldset {
 
     padding: 16px;
     border: 16px;
+   margin: 26px;
 }
   
 
