@@ -301,13 +301,13 @@ fieldset {
  
 
 
-/*-----------------------------------------Attempt 2*/
+/*-----------------------------------------Snippet/article inroduction section*/
 
 .article-2 {
    
     width: 300px;
     border-radius: 15px;
-    box-shadow: 0 0 20px 0 #686868; 
+    /*box-shadow: 0 0 20px 0 #686868; */
 
     padding: 16px;
     border: 16px;
@@ -317,12 +317,17 @@ fieldset {
 .snippet-container-2 {
     
     background-color: rgba(0, 0, 0, 0.9); 
-    color: white;
     display: flex; 
     border-radius: 15px;
     box-shadow: 0 0 20px 0 #686868; 
     justify-content: space-between;
 }
+
+.article-2 a, .article-2 p, .article-2 h3 {
+    color: white;
+}
+
+/*------------------------Hover rule in the above section*/
 
 .article-2 a:hover {
     color:  #686868;
@@ -331,6 +336,18 @@ fieldset {
                break and not apply*/
 }
 
+.article-2 p:hover {
+     color:  #686868;
+
+}
+
+.article-2 h3:hover {
+    color: #686868;
+}
+
+.snippet-container-2:hover {
+    color: #68686894;
+}
 
 @media screen and (max-width:850px) {
     .snippet-container-2 {
