@@ -67,8 +67,8 @@
   /*--------------------------------------------testing a new div container */
 
     .test-container {
-        width: 2600px;  
-        height: 2600px;
+       /* width: 2600px;  
+        height: 2600px; */
         background-color: #6868684e;
         display: flex; /* I have indicated the box sizes and flex worked after, 
         but testing in the old one - that still does not help.*/
@@ -82,3 +82,90 @@
         border-radius: 15px;
         box-shadow: 0 0 20px 0 #686868;
     }
+
+
+    /*---------------------------------------------Deleted code for article intro section */
+
+     
+  .snippet-container {
+   
+    padding: 6px;
+    border: 6px;
+  
+    /* above margins are putting the container in the centre of the page*/
+    display: flex; /* Put snippet divs in a row inside the container */
+   justify-content: space-evenly; 
+  align-items: center; 
+  box-shadow: 0 0 20px 0 #686868;
+    
+  }
+
+  .snippet {
+    /*background-color: bisque;*/
+    padding: 6px;
+    border: 6px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #686868; 
+    /* flex in not working. Will apply sizes to the snippet boxes to see if I can fix it */
+    display: flex;
+    justify-content: baseline;
+    align-items: first flex-start;
+    flex-shrink: 0; /*stops the boxes with articles from shrinking when the size of the screen gets smaller*/
+
+   
+  }
+
+
+  .intro-article-1, .intro-article-2, .intro-article-3 {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-self: center;
+  }
+
+  .intro-article-3 {
+    align-self: center;
+    width: 400px;
+  }
+ 
+
+  @media screen and (max-width: 1050px) {
+    .snippet-container {
+        size-adjust: 1000px;
+        align-items: ;
+    }
+
+
+  }
+    
+  
+
+  @media screen and (max-width:850px) {
+
+    .snippet-container {
+        width: 300px;
+        height: 100%;
+
+    }
+
+    .snippet {
+        justify-content: flex-start;
+    }
+
+  
+}
+
+@media screen and (max-width:600px) {
+    .snippet {
+        flex-direction: column;
+    }
+
+    .snippet {
+        padding: 6px;
+        border: 6px;
+        border: solid;
+        border-radius: 5px;
+      }
+
+    }
+
