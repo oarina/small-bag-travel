@@ -294,22 +294,37 @@ fieldset {
     padding: 6px;
     border: 6px;
     border: 1px solid  #686868;
+    margin: 6px;
   }
 
   .snippet-container {
-   /* width: 850px;  */
-    height: 250px;
+   width: 2600px;  
+    height: 2600px;
 
     padding: 6px;
     border: 6px;
-    background-color: grey; 
     margin-left: auto;
     margin-right: auto;
     /* above margins are putting the container in the centre of the page*/
     display: flex; /* Put snippet divs in a row inside the container */
-    justify-content: space-evenly;
+
+   justify-content: space-evenly; 
+   align-items: center;
+   box-shadow: 0 0 20px 0 #686868;
     
   }
+
+  .snippet {
+    /*background-color: bisque;*/
+    border: black;
+    padding: 6px;
+    border: 6px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #686868;
+    /* flex in not working. Will apply sizes to the snippet boxes to see if I can fix it */
+   
+  }
+
 
   @media screen and (max-width:850px) {
 
@@ -317,6 +332,7 @@ fieldset {
         width: 300px;
         height: 100%;
         flex-direction: column;
+
     }
 }
 
@@ -329,6 +345,7 @@ fieldset {
         padding: 6px;
         border: 6px;
         border: solid;
+        border-radius: 5px;
       }
 
 }

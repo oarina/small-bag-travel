@@ -1,0 +1,84 @@
+/*----------------------------------------------Article */
+
+
+  /* 2nd attempt at article */
+
+  .article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(173, 49, 49, 0.556);
+  }
+
+  .article p {
+    margin-bottom: 20px;
+    background-color: rgba(0, 255, 162, 0.562);
+  }
+
+  .article h2 {
+    margin-bottom: 20px;
+    background-color: rgba(0, 255, 255, 0.506);
+  }
+  
+  .image-container {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.39);
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-container p {
+    font-style: italic;
+
+  }
+
+  /*---------------------------------------------------intro info */
+
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .snippet-container {
+  
+    padding: 6px;
+    border: 6px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .snippet {
+    /*background-color: bisque;*/
+    padding: 16px;
+    border: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #686868;
+    display: flex;
+    /* flex in not working. Will apply sizes to the snippet boxes to see if I can fix it */
+
+  }
+
+  /*--------------------------------------------testing a new div container */
+
+    .test-container {
+        width: 2600px;  
+        height: 2600px;
+        background-color: #6868684e;
+        display: flex; /* I have indicated the box sizes and flex worked after, 
+        but testing in the old one - that still does not help.*/
+    }
+
+    .test-child {
+        width: 800px;
+        height: 800px;
+        padding: 6px;
+        border: 6px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 0 #686868;
+    }
