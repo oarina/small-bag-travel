@@ -37,16 +37,17 @@ footer {
     /* Sticky positon with bottom 0 still has the footer in a middle of a page. 
     Position fixed with left, right, bottom as 0 has a sticky property !*/
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.9);
-     box-shadow: 0 0 20px 0  #686868;
+    background-color: rgba(0, 0, 0, 0.9); 
+    box-shadow: 0 0 20px 0  #686868;
     padding: 6px;
 
 }
 
-footer a {
-    color: white;
+footer a { 
+    color: #F6F1F1;
     padding: 6px;
     margin: 6px;
+    /* without internet the Facebook and email icons do not work */
 
 
 }
@@ -160,7 +161,8 @@ a:hover {
 
 .slogan-container h2 {
     letter-spacing: 3px;
-    text-shadow: 0px  2px 0px  #686868 ; /*
+    text-shadow: 0px  2px 0px  #686868 ; 
+    /*
     giving slogan a stenciled grafiti looking shadow to also
     match with the header and footer shadow */
 
@@ -228,9 +230,6 @@ fieldset {
     border: 1px solid  #686868;
     border-radius: 5px; /* gives the field edges a little bit of a curve */
     outline: none;
-   
-    
-    
     
 }
 
@@ -298,11 +297,12 @@ fieldset {
   }
 
   .snippet-container {
-    width: 850px;
+   /* width: 850px;  */
     height: 250px;
+
     padding: 6px;
     border: 6px;
-    background-color: grey;
+    background-color: grey; 
     margin-left: auto;
     margin-right: auto;
     /* above margins are putting the container in the centre of the page*/
@@ -311,7 +311,7 @@ fieldset {
     
   }
 
-@media screen and (max-width:850px) {
+  @media screen and (max-width:850px) {
 
     .snippet-container {
         width: 300px;
@@ -321,8 +321,8 @@ fieldset {
 }
 
 @media screen and (max-width:600px) {
-    .snippet-container .snippet {
-        color: green;
+    .snippet-container {
+        height: ;
     }
 
     .snippet {
