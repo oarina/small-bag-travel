@@ -22,11 +22,14 @@ h2 {
     padding: 6px;
     border: 6px;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 7px;
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
     by targeting the color for <a> under navigation class that fixes the issue--*/
     text-shadow: 0px  2px 0px  #686868;
+}
+
+h1 {
+    letter-spacing: 11px;
 }
 
 /*---------------------------------------------Footer */ 
@@ -69,7 +72,7 @@ header {
 
 .navigation {
 
-    /* Border is to only highlight the area - remove after*/
+    /* Border is to only highlight the area - remove after */
     display: flex;
     /* puts logo and menu items in a row */
     align-items: center;
@@ -86,7 +89,7 @@ header {
 }
 
 .item {
-    padding: 6px;
+    padding: 16px;
     border: 6px;
 }
 
@@ -116,7 +119,7 @@ a:hover {
 
 
 
-@media screen and (max-width:605px) {
+@media screen and (max-width:792px) {
 
     .navigation {
         flex-direction: column;
