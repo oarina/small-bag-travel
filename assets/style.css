@@ -126,6 +126,8 @@ a:hover {
 /* --------------------------------------------Styling Hero/Intro section */
 
 .intro-container {
+    margin-top: 26px;
+    margin-bottom: 26px;
     padding: 16px 6px 6px;
     border: 6px;
     display: flex;
@@ -134,6 +136,11 @@ a:hover {
     /*this will always position brian and slogan evenly no matter what screen
     width you change it to */
     align-items: center; 
+
+    max-width: 1800px;
+    /* when I set max width for some reason container goes to the left side. */
+    margin: 0 auto;
+    /* margin 0 auto has fixed the issue. */ 
     
 }
 
@@ -252,8 +259,25 @@ fieldset {
     padding-right: 20px;
     border: 1px solid  #686868;
     border-radius: 5px;
+    color: white;
     
 }
+
+#submit:hover {
+    color:  #000000;
+    background-color: #afafaf;
+    /* button will change colour when you hover over it for better UX */
+} 
+
+#submit:active {
+    box-shadow: 0 0 20px 0 #686868; 
+    /* A cast shadow at the button click will the the user know they have
+    defenitely clicked this button */
+}
+
+
+
+
 
 /*----------------------------------------------Article */
 
@@ -315,16 +339,27 @@ fieldset {
   
 
 .snippet-container-2 {
-    
+    margin-top: 36px;
+    margin-bottom: 36px;
+
     background-color: rgba(0, 0, 0, 0.9); 
     display: flex; 
     border-radius: 15px;
     box-shadow: 0 0 20px 0 #686868; 
     justify-content: space-between;
+
+    max-width: 1800px;
+    /* when I set max width for some reason container goes to the left side. */
+    margin: 0 auto;
+    /* margin 0 auto has fixed the issue. */ 
 }
 
 .article-2 a, .article-2 p, .article-2 h3 {
     color: white;
+}
+
+.image-caption {
+   font-size: small;
 }
 
 /*------------------------Hover rule in the above section*/
