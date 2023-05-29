@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    /* background-color: rgb(95, 95, 95); */
     text-decoration: none;
     /* To remove the underline from links */
 }
@@ -12,7 +11,7 @@
 /* --------------------------------------------Basic body and logo design */
 
 body {
-   /*  font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
    font-family: sans-serif;
    font-size: large;
 }
@@ -33,7 +32,6 @@ h1 {
 }
 
 /*---------------------------------------------Footer */ 
-
 footer {
     position: fixed;
     left: 0;
@@ -54,12 +52,9 @@ footer a {
     margin: 6px;
     /* without internet the Facebook and email icons do not work */
     text-align: center;
-
-
 }
 
 /* --------------------------------------------Making navigation sticky */
-
 header {
     position: sticky;
     top: 0;
@@ -69,9 +64,7 @@ header {
 }
 
 /* --------------------------------------------Styling navigaiton bar */
-
-.navigation {
-
+.navigation-container {
     /* Border is to only highlight the area - remove after */
     display: flex;
     /* puts logo and menu items in a row */
@@ -88,7 +81,7 @@ header {
 
 }
 
-.item {
+.menu-item {
     padding: 16px;
     border: 6px;
 }
@@ -99,7 +92,7 @@ header {
     padding: 3px;
 }
 
-.navigation a {
+.navigation-container a {
     color: white;
 }
 
@@ -114,14 +107,9 @@ a:hover {
     /* This will color the menu item and show you the pauge user is currently on */
 }
 
-
-/* --------------------------------------------Add rule for 450/605px screen */
-
-
-
-@media screen and (max-width:792px) {
-
-    .navigation {
+/* --------------------------------------------Add rule for 795px screen */
+@media screen and (max-width:795px) {
+    .navigation-container {
         flex-direction: column;
         /* this puts logo on the top and menu items on the bottom
         when it breaks at 605 all is optimised to look good at 375px*/
@@ -129,9 +117,7 @@ a:hover {
 }
 
 /* --------------------------------------------Styling Hero/Intro section */
-
 .intro-container {
-
     padding: 16px 6px 6px;
     border: 6px;
     display: flex;
@@ -145,13 +131,10 @@ a:hover {
     /* when I set max width for some reason container goes to the left side. */
     margin: 0 auto;
     /* margin 0 auto has fixed the issue. */ 
-    
 }
 
 .brian {
-
     margin: 26px;
-
     border-radius: 50%;
     /* This makes the square image turn into a circle*/
     border-style: solid;
@@ -180,46 +163,21 @@ a:hover {
     /*
     giving slogan a stenciled grafiti looking shadow to also
     match with the header and footer shadow */
-
-    
 }
 
 @media screen and (max-width:850px) {
     .intro-container {
         flex-direction: column;
     }
-
     .slogan-container {
         width: 307px;
         height: 400px;
         text-align: justify;
     }
+    /* Adding rule to collapse slogan under the picture in order not to skew the text */
 }
-
-/* Adding rule to collapse slogan under the picture in order not to skew the text */
-
 
 /**---------------------------------------------Form */
-/*
-form {
-    background-color: grey;
-}
-
-legend {
-    background-color: yellow;
-}
-
-fieldset {
-    background-color: aqua;
-}
-
-.subscription-container {
-    background-color: orange;
-} */
-
-
-
-
 .form-box-container {
     /*background-color: grey;*/
     margin-top: 26px;
@@ -246,7 +204,6 @@ fieldset {
     border: 1px solid  #686868;
     border-radius: 5px; /* gives the field edges a little bit of a curve */
     outline: none;
-    
 }
 
 #textarea {
@@ -255,7 +212,6 @@ fieldset {
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid  #686868;
-    
 }
 
 #submit {
@@ -267,8 +223,7 @@ fieldset {
     padding-right: 20px;
     border: 1px solid  #686868;
     border-radius: 5px;
-    color: white;
-    
+    color: white;   
 }
 
 #submit:hover {
@@ -282,16 +237,7 @@ fieldset {
     /* A cast shadow at the button click will the the user know they have
     defenitely clicked this button */
 }
-
-
-
-
-
 /*----------------------------------------------Article */
-
-
-  /* 2nd attempt at article */
-
   .article {
     max-width: 800px;
     margin: 0 auto;
@@ -317,12 +263,9 @@ fieldset {
   
   .image-container p {
     font-style: italic;
-
   }
 
-
-  /*---------------------------------------------Subscription + Snippet */
-
+  /*---------------------------------------------Subscription */
   .subscription-container {
     padding: 6px;
     border: 6px;
@@ -330,40 +273,30 @@ fieldset {
     margin: 6px;
   }
 
- 
-
-
 /*-----------------------------------------Snippet/article inroduction section*/
-
-.article-2 {
-   
+.snippet {
     width: 300px;
     border-radius: 15px;
-    /*box-shadow: 0 0 20px 0 #686868; */
-
     padding: 16px;
     border: 16px;
    margin: 26px;
 }
-  
 
-.snippet-container-2 {
+.snippet-container {
     margin-top: 36px;
     margin-bottom: 36px;
-
     background-color: rgba(0, 0, 0, 0.9); 
     display: flex; 
     border-radius: 15px;
     box-shadow: 0 0 20px 0 #686868; 
     justify-content: space-between;
-
     max-width: 1800px;
     /* when I set max width for some reason container goes to the left side. */
     margin: 0 auto;
     /* margin 0 auto has fixed the issue. */ 
 }
 
-.article-2 a, .article-2 p, .article-2 h3 {
+.snippet a, .snippet p, .snippet h3 {
     color: white;
 }
 
@@ -372,31 +305,29 @@ fieldset {
 }
 
 /*------------------------Hover rule in the above section*/
-
-.article-2 a:hover {
+.snippet a:hover {
     color:  #686868;
 
     /* if I don't target a under navigation ID the hover rule will 
                break and not apply*/
 }
 
-.article-2 p:hover {
+.snippet p:hover {
      color:  #686868;
 
 }
 
-.article-2 h3:hover {
+.snippet h3:hover {
     color: #686868;
 }
 
-.snippet-container-2:hover {
+.snippet-container:hover {
     color: #68686894;
 }
 
 @media screen and (max-width:850px) {
-    .snippet-container-2 {
+    .snippet-container {
         flex-direction: column;
         align-items: center;
-    }
-    
+    }   
 }
