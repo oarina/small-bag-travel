@@ -11,7 +11,7 @@
 /* --------------------------------------------Basic body and logo design */
 
 body {
-    font-family: 'Open Sans', sans-serif; 
+    /*font-family: 'Open Sans', sans-serif; */
     font-family: sans-serif;
     font-size: large;
 }
@@ -23,14 +23,16 @@ h2 {
     was operating correctly only up to 4px padding and under*/ 
     border: 6px;
    font-family: monospace;
-   /* Anton font will not load in my mobile phone, but nor will sans-serif. It does not seem to
-   be compatable with IOS
+
    
-   testing out monoscape - it is ok, testing fantasy -. Old setting was for Anton and fallback sans-serif 
+   /* BUG: Anton font will not load in my mobile phone, but nor will sans-serif. It does not seem to
+   be compatable with IOS.
    
-   after the test it seems that IOS browser is not falling back onto fantasy. 
+   1. Testing out monoscape - it is ok, testing fantasy. Old setting was for Anton and fallback sans-serif.
    
-   Deleting Anton and testing again - that did not work and looks the same */
+   2. After the test it seems that IOS browser is not falling back onto fantasy. 
+   
+   3. Deleting Anton and testing again - that did not work and looks the same */
 
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
@@ -74,6 +76,10 @@ header {
     /* Sticky positon only works on header and with top 0 !*/
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 20px 0  #686868;
+    z-index: 1;
+    /* header has a z-index higher than a form which means that it will 
+    display over the form if they are overlapping */
+
 }
 
 /* --------------------------------------------Styling navigaiton bar */
@@ -196,7 +202,6 @@ h3 {
 
 /**---------------------------------------------Form */
 .form-box-container {
-
     background-color: rgb(255, 255, 255);
     /* Adding white backround to fix fields separating from the backround when in small screen horizontal mode */
     margin-top: 26px;
@@ -213,6 +218,7 @@ h3 {
     align-items: center;
     justify-content: center;
     /* flex and centre values put the form in the centre of the div */
+    z-index: 0;
 }
 
 #input-field {
