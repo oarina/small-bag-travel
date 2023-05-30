@@ -11,9 +11,9 @@
 /* --------------------------------------------Basic body and logo design */
 
 body {
-  /* font-family: 'Open Sans', sans-serif; */
-   font-family: sans-serif;
-   font-size: large;
+    font-family: 'Open Sans', sans-serif; 
+    font-family: sans-serif;
+    font-size: large;
 }
 
 #logo,
@@ -22,7 +22,11 @@ h2 {
     /* After testing in different screen sizes - sansung galaxy 8+ 
     was operating correctly only up to 4px padding and under*/ 
     border: 6px;
-    font-family: 'Anton', sans-serif;
+   font-family: monospace; 
+   /* Anton font will not load in my mobile phone, but nor will sans-serif. It does not seem to
+   be compatable with IOS
+   
+   testing out moniscape now. Old setting was for Anton and fallback sans-serif */
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
     by targeting the color for <a> under navigation class that fixes the issue--*/
@@ -183,7 +187,9 @@ a:hover {
 
 /**---------------------------------------------Form */
 .form-box-container {
-    /*background-color: grey;*/
+
+    background-color: rgb(255, 255, 255);
+    /* Adding white backround to fix fields separating from the backround when in small screen horizontal mode */
     margin-top: 26px;
     width: 350px;
     height: 450px;
@@ -192,6 +198,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%); 
+    /*  putting the form in a centr by suggesting 50% top bottn and transforing */
     position: absolute;
     display: flex;
     align-items: center;
@@ -213,7 +220,7 @@ a:hover {
 #textarea {
     border-radius:7px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
     border: 1px solid  #686868;
 }
@@ -241,7 +248,7 @@ a:hover {
     /* A cast shadow at the button click will the the user know they have
     defenitely clicked this button */
 }
-/*----------------------------------------------Article */
+/*----------------------------------------------Articles */
   .article {
     max-width: 800px;
     margin: 0 auto;
