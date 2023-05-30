@@ -22,15 +22,15 @@ h2 {
     /* After testing in different screen sizes - sansung galaxy 8+ 
     was operating correctly only up to 4px padding and under*/ 
     border: 6px;
-   font-family: fantasy ;
+   font-family: monospace;
    /* Anton font will not load in my mobile phone, but nor will sans-serif. It does not seem to
    be compatable with IOS
    
-   testing out moniscape - it is ok, testing fantasy -. Old setting was for Anton and fallback sans-serif 
+   testing out monoscape - it is ok, testing fantasy -. Old setting was for Anton and fallback sans-serif 
    
    after the test it seems that IOS browser is not falling back onto fantasy. 
    
-   Deleting Anton and testing again. */
+   Deleting Anton and testing again - that did not work and looks the same */
 
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
