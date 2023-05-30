@@ -18,7 +18,9 @@ body {
 
 #logo,
 h2 {
-    padding: 6px;
+    padding: 2px;
+    /* After testing in different screen sizes - sansung galaxy 8+ 
+    was operating correctly only up to 4px padding and under*/ 
     border: 6px;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
@@ -30,7 +32,7 @@ h2 {
 }
 
 h1 {
-    letter-spacing: 9px;
+    letter-spacing: 7px;
 }
 
 /*---------------------------------------------Footer */ 
@@ -84,10 +86,7 @@ header {
 }
 
 .menu-item {
-    padding: 9px;
-    /* Padding is other than 6 because after testing on a small 
-    device the 2 word items would squeeze into 2 lines. 
-    9 pixes prevents this from happening on a small screen  */ 
+    padding: 6px;
     border: 6px;
 }
 
