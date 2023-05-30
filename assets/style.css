@@ -24,11 +24,13 @@ h2 {
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
     by targeting the color for <a> under navigation class that fixes the issue--*/
-    text-shadow: 0px  2px 0px  #686868;
+    text-shadow: 0px  1px 0px  #68686862;
+    /* Had to recude shadow and reduce opacity after testing on a small
+    device - it has a bad visibility. */ 
 }
 
 h1 {
-    letter-spacing: 11px;
+    letter-spacing: 9px;
 }
 
 /*---------------------------------------------Footer */ 
@@ -82,7 +84,10 @@ header {
 }
 
 .menu-item {
-    padding: 16px;
+    padding: 9px;
+    /* Padding is other than 6 because after testing on a small 
+    device the 2 word items would squeeze into 2 lines. 
+    9 pixes prevents this from happening on a small screen  */ 
     border: 6px;
 }
 
