@@ -1,42 +1,58 @@
 ![Image Description](./assets/images/website_presentation.jpg)
 [Small Bag Travels](https://oarina.github.io/small-bag-travel/) is a static website designed for an Irish travel blogger. The goal is to highlight to a reader three most intriguing journey recollections and redirect them to a full article so that they can enjoy the bloggers in depth recital of his travels. The website wants to borrow from the style and feel of the Facebook blog so that the blogger's personality can come through.  Reader can also fill the form or subscribe for updates.  
-# Tble of Contents
-1. <details open>
-    <summary><a href="#ux">UX</a></summary>
+# Table of Contents
+<details>
+<summary><a href="#ux">UX</a></summary>
 
-    <ul>
-    <li><details>
-    <summary><a href="#goals">Goals</a></summary>
+- [Reader Goals](#reader-goals)
+    - [Target readers](#target-readers)
+    - [User Goals](#user-goals)
+      - [Small Bag Travels Website fills those needs accordingly](#small-bag-travels-website-fills-those-needs-accordingly)
+      - [Blogger Goals](#blogger-goals)
+- [Blogger Requirement](#blogger-requirement)
+- [User Stories](#user-stories)
+- [Visual Design](#visual-design)
+  - [Wireframes](#wireframes)
+  - [Font](#font)
+  - [Logo](#Logo)
+  - [Icons](#Icons)
+  - [Colours](#Colours)
+  - [Stylig](#Features)
+</details>
+<details>
+<summary><a href="#features">Features</a></summary>
 
-    - [Visitor Goals](#visitor-goals)
-    - [Business Goals](#business-goals)
-    - [User Stories](#user-stories)
-    </details></li>
+ - [Navbar](#navbar)
+- [Footer](#footer)
+ - [Intro Section](#intro-section)
+ - [Article snippets](#article-snippets)
+ - [Trip section](#trip-section)
+ - [Articles](#articles)
+ - [Form](#form)
+</details>
+<details>
+<summary><a href="#tech">Tech</a></summary>
 
-    <li><details>
-    <summary><a href="#visual-design">Visual Design</a></summary>
-
-    - [Wireframes](#wireframes)
-    - [Fonts](#fonts)
-    - [Icons](#icons)
-    - [Colors](#colors)
-    - [Images](#images)
-    - [Styling](#styling)
-    </details></li>
-    </ul>
+ - [Technologies Used](#technologies-used)
+ - [Libraries](#libraries)
+ - [Platforms](#platforms)
+ - [Testing](#testing)
+ - [Bugs](#bugs)
+     - [Contact](#contact)
+      - [Credits](#credits)
 </details>
 
 
-# UX
-## Goals
-### Reader Goals
 
-Target readers:
+# UX
+## Reader Goals
+
+### Target readers
 * Users who are subscribed to Small Bag Travel Facebook Page and want to enjoy Brian's story in an in-depth and focused format.
 * English speaking viewers that are interested in current affairs and are looking for an impartial source of information around heavily politicised topics and locations around the world.
 * People who enjoy a story of overcoming or navigating a dangerous situations in an unknown environment.
 
-User Goals:
+### User Goals
 
 * Read through one or all of the stories.
 * Ease of use
@@ -45,7 +61,7 @@ User Goals:
 * Ejoy a low-key non-intrusive content but also have the option to find Brian if user wishes so.
 
 
-Small Bag Travels Website fills those needs accordingly:
+#### Small Bag Travels Website fills those needs accordingly
 
  *  Website has a minimalist feel with sharp contrast.
  *  The hero section of the blog presents the blogger's image without a background and blends it into a faint off-white background with a message that blogger wants to convey.
@@ -55,16 +71,16 @@ Small Bag Travels Website fills those needs accordingly:
  * Extra consideration was made.
 
 
- Blogger goals:
+ ### Blogger goals
  * To display the longer format information and capture more audience.
  * To continue honing on the blog value proposition and zeroing in on a niche style and format. 
  * To Highlight the achievements made so far and show-off key material in detail that is not covered in Small Bag Travel Facebook Page.
  * To capture and connect with readers who specifically like longer writing format style. 
 
- Blogger requirement:
+ ### Blogger requirement
  * Blogger provides the visual material, captions to visual material, article text and travel information along with dates. Blogger specifically wants information to be presented as is - in an untampered state.
 
-### User Stories:
+## User Stories
 
 1. **Break from social.** As a user who is already subscribed to the Small Bag Travel Facebook page and follow the blogger, I want to have a centralised platform to read about about Small Bag Travel in one place.  I prefer this over browser and click through multiple posts and expand wrapped text on a Facebook Page. I can get overwhelmed with busy, distracting social space that has a lot of advertisement and call to action content. I want a clean, user friendly, easy navigation bar and content without distractions.
 
@@ -116,9 +132,8 @@ Small Bag Travels Website fills those needs accordingly:
 
 
 # Features
-## Page Elements
-### All Pages
-#### Navbar
+
+## Navbar
 ![Full navar](./assets/images/website_navbar_full.png)
 
 ![Mobile navar](./assets/images/website_navbar_highlight.png)
@@ -127,12 +142,12 @@ Small Bag Travels Website fills those needs accordingly:
 * When you are on an article page - it will be shown in bright orange colour so that you are aware where you are at all times.
 * Header and footer are not exactly black, so as you are scrolling through content there will be a faint silouette going under the header and the footer - it offsets the harshnes of just black and feels a little bit more mysterious and classy.
 
-#### Footer
+## Footer
 ![Footer](./assets/images/website_footer.png)
 
 * Tucked away it is discretely always sitting at the bottom. User has access to two provided contacts - Facebook Page and an email. Like navigation bar it will light up orange if you click on it. 
 
-#### Intro Section
+## Intro Section
 ![Intro Mobile](./assets/images/website_intro_desktop.png)
 ![Intro Desktop](./assets/images/website_intro_mobile.png)
 
@@ -140,7 +155,7 @@ Small Bag Travels Website fills those needs accordingly:
 * The message sits under the blogger in a mobile, but in a desktop it would be horizontal instead. 
 * Minimalist orange accent around the blogger is chosen to accentuate the main character. The slogan is styled togethe with a logo and is the boldest text on a page. 
 
-#### Article snippets
+## Article snippets
 
 ![Intro Landscape](./assets/images/website_snippets_horizontal.png)
 ![Intro Mobile](./assets/images/website_snippets_mobile.png)
@@ -148,7 +163,7 @@ Small Bag Travels Website fills those needs accordingly:
 * Article snippet/teaser section wants to distinguish itself from the above and attract attention. That is why it is white on black. When it collapses for mobile it retains the continued shape from the collaped header items. This will make it more seamless and put together, while you can still feel the scrolling as text falls under the header and footer.
 * Every single item inside the snippet is clickable so you can intuitively jump to the article of choice.
 
-#### Trip section
+## Trip section
 
 ![Trip Section Landscape](./assets/images/website_trip_horizontal.png)
 ![Trip Section Mobile](./assets/images/website_trip_mobile.png)
@@ -158,14 +173,53 @@ Small Bag Travels Website fills those needs accordingly:
 * It is now back to black font on off-white which pops the light statistics in this section.
 * The backround image is set so that when on mobile device the zoom will occur on the orange countries that blogger visited.
 
-#### Articles
+## Articles
+![Articles Landscape](./assets/images/website_article_desktop.png)
+![Articles Mobile](./assets/images/website_article_mobile.png)
 
+* Article section is kept simple. Images and text all lign up with each other and the artice only has one size when in ladscape mode that is not too wide. It should strain the eyes less if the eye can go onto the next page sooner.
+* Article also tries to fill in as much of a page as possible when on mobile trying to utilise as much space as possible without being too crammed. 
 
-#### Form
+## Form
+![Form Landscape](./assets/images/website_form_tablet.png)
+![Form Mobile](./assets/images/website_form_mobile.png)
 
-# Testing 
+* I have kept the form wiht as little boxes to fill as possible, however, email, name and message boxes are requred so you could not send an empty form. 
+* This page is also intentionally kept minimalistic and only the form is in the centre of a page no matter what device you will have. 
+* With nothing but the form the aim is to minimise distractions and help the user fill the form fast easy and then witht he header and footer at the finger tips - the user can get back to what they were previously doing.
+
+# Tech 
+
+##  Technologies Used 
+* HTL 
+* CSS 
+
+## Libraries
+* fontawesome
+* Google Font
+
+## Platforms 
+* Codeanywhere 
+* VS Code both native and cloud
+
+## Testing 
+* Validated by both W3C HTML5 Validator and W3C CSS Validator 
+* Tested in DevTools and on Iphone DE, Samsung Table, Apple Ipod, OpePlus phone and Macbook Pro. 
+* Site was shared with friends and family for further testing and feedback.
+* Each link, button and feature were checked in the above devices and environments horizontally and vertically. 
+
 
 ## Bugs
+* Mobile IOS devices do not load Anton font correctly. 
+* Google Dev Tools screenzise simulator does not give the same results as the actual device.
+
+
+### Contact
+* arinkaheaven@gmail.com
+
+### Credits
+* Blog content is an original brainchild of Brian O'Connor who is the admin of the original Small Bag [Travel Facebook Page](https://www.facebook.com/SmallBagTravel).
+
 <!--Granted logo from CSS validator-->
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
