@@ -360,10 +360,22 @@ h3 {
 
 /*-------------------------World map section */
 
-.world-map-container {
-    background-image: url("../images/map_visited_countries.jpg");
+#world-map-container {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-image: url(../assets/images/map_visited_countries.jpg);
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
     width: 100%;
-    height: 400px;
-  
+    height: 700px;
+}
+
+@media screen and (max-width:850px) {
+    #world-map-container {
+        background-position: 65% 20%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
