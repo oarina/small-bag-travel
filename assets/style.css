@@ -192,7 +192,7 @@ a:hover {
     }
     .slogan-container {
         width: 307px;
-        height: 400px;
+        height: 307px;
         text-align: justify;
     }
     /* Adding rule to collapse slogan under the picture in order not to skew the text */
