@@ -11,9 +11,11 @@
 /* --------------------------------------------Basic body and logo design */
 
 body {
-    /*font-family: 'Open Sans', sans-serif; */
-    font-family: sans-serif;
-    font-size: large;
+    font-family: Sans-serif; 
+    /* when applying planned pair Anton and Open Sans - it does not actually look good. It is hard
+    to read Open Sans font. I am leaving sans-serif instead */
+    background-color: #ef87000b;
+ 
 }
 
 #logo,
@@ -116,13 +118,13 @@ header {
 }
 
 a:hover {
-    color:  #686868;
+    color:  #ef8600;
     /* if I don't target a under navigation ID the hover rule will 
                break and not apply*/
 }
 
 .menu-container #active {
-    color:  #686868
+    color:  #ef8600 ;
     /* This will color the menu item and show you the pauge user is currently on */
 }
 
@@ -160,7 +162,7 @@ a:hover {
     border-width: 6px;
     /* creates a thinker circle around Brian also did not add padding or border
     here because I want Brian to be flush to the circle */
-    border-color:  #686868
+    border-color: #ef8600
 }
 
 .slogan-container {
@@ -182,10 +184,6 @@ a:hover {
     /*
     giving slogan a stenciled grafiti looking shadow to also
     match with the header and footer shadow */
-}
-
-h3 {
-    text-transform: uppercase;
 }
 
 @media screen and (max-width:850px) {
@@ -254,7 +252,7 @@ h3 {
 
 #submit:hover {
     color:  #000000;
-    background-color: #afafaf;
+    background-color: #ef8600;
     /* button will change colour when you hover over it for better UX */
 } 
 
@@ -332,23 +330,23 @@ h3 {
 
 /*------------------------Hover rule in the above section*/
 .snippet a:hover {
-    color:  #686868;
+    color:  #ef8600;
 
     /* if I don't target a under navigation ID the hover rule will 
                break and not apply*/
 }
 
 .snippet p:hover {
-     color:  #686868;
+     color:  #ef8600;
 
 }
 
 .snippet h3:hover {
-    color: #686868;
+    color: #ef8600;
 }
 
 .snippet-container:hover {
-    color: #68686894;
+    color: #ef8600;
 }
 
 @media screen and (max-width:850px) {
@@ -369,6 +367,8 @@ h3 {
     overflow: hidden;
     width: 100%;
     height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #686868; 
 }
 
 #world-map-container div {
@@ -378,16 +378,24 @@ h3 {
     padding-left: 30px;
     height: 400px;
     padding-right: 30px;
-
     box-sizing: border-box;
-   
+}
 
+#world-map-cointainer h3 {
+    text-transform: uppercase;
+}
+
+#padding-container-for-world-map {
+    padding-top: 26px;
+    padding-top: 26px;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width:850px) {
     #world-map-container {
         background-position: 65% 20%;
-        background-size: 80%;
+        background-size: 100%;
         background-repeat: no-repeat;
         background-size: cover;
     }
