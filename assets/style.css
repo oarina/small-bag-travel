@@ -357,3 +357,13 @@ h3 {
         align-items: center;
     }   
 }
+
+/*-------------------------World map section */
+
+.world-map-container {
+    background-image: url("../images/map_visited_countries.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  
+}
