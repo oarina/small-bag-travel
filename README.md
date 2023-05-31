@@ -177,16 +177,16 @@
 ![Articles Landscape](./assets/images/website_article_desktop.png)
 ![Articles Mobile](./assets/images/website_article_mobile.png)
 
-* Article section is kept simple. Images and text all lign up with each other and the artice only has one size when in ladscape mode that is not too wide. It should strain the eyes less if the eye can go onto the next page sooner.
+* Article section is kept simple. Images and text all line up with each other and the artice only has one size when in ladscape mode that is not too wide. It should strain the eyes less if the eye can go onto the next page sooner.
 * Article also tries to fill in as much of a page as possible when on mobile trying to utilise as much space as possible without being too crammed. 
 
 ## Form
 ![Form Landscape](./assets/images/website_form_tablet.png)
 ![Form Mobile](./assets/images/website_form_mobile.png)
 
-* I have kept the form wiht as little boxes to fill as possible, however, email, name and message boxes are requred so you could not send an empty form. 
-* This page is also intentionally kept minimalistic and only the form is in the centre of a page no matter what device you will have. 
-* With nothing but the form the aim is to minimise distractions and help the user fill the form fast easy and then witht he header and footer at the finger tips - the user can get back to what they were previously doing.
+* I have kept the form with as little boxes to fill as possible, however, email, name and message boxes are required so you could not send an empty form. 
+* This page is also intentionally kept minimalistic and only the form is in the center of a page no matter what device you will have. 
+* With nothing but the form the aim is to minimise distractions and help the user fill the form fast easy and then with the header and footer at the users finger tips - the user can get back to what they were previously doing.
 
 # Tech 
 
@@ -203,8 +203,8 @@
 * VS Code both native and cloud
 
 ## Testing 
-* Validated by both W3C HTML5 Validator and W3C CSS Validator 
-* Tested in DevTools and on Iphone DE, Samsung Table, Apple Ipod, OpePlus phone and Macbook Pro. 
+* Validated by both W3C HTML5 Validator and W3C CSS Validator. 
+* Tested in DevTools and on Iphone DE, Samsung Tablet, Apple Ipod, OnePlus phone and Macbook Pro. 
 * Site was shared with friends and family for further testing and feedback.
 * Each link, button and feature were checked in the above devices and environments horizontally and vertically. 
 
