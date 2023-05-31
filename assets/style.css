@@ -291,19 +291,53 @@ a:hover {
 
   /*---------------------------------------------Subscription */
   .subscription-container {
-    padding: 6px;
-    border: 6px;
-    border: 1px solid  #686868;
-    margin: 6px;
+    padding: 16px;
+    padding-bottom: 6px;
+    margin: 16px;
+    max-width: 1800px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
   }
 
+  #subscribe-button {
+    background-color:  #686868;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    /* Copying the overal staylle from my form submit button */   
+  }
+
+  #subscription-input-field {
+    width: 208px;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid  #686868;
+    border-radius: 5px; /* gives the field edges a little bit of a curve */
+    outline: none;
+  }
+
+  #subscribe-button:hover {
+    color:  #000000;
+    background-color: #ef8600;
+} 
+
+    #subscribe-button:active {
+        box-shadow: 0 0 20px 0 #686868; 
+    /* using the same style as developed in the form */
+    }
 /*-----------------------------------------Snippet/article inroduction section*/
 .snippet {
     width: 300px;
     border-radius: 15px;
     padding: 16px;
     border: 16px;
-   margin: 26px;
+    margin: 26px;
 }
 
 .snippet-container {
