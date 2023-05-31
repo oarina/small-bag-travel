@@ -374,10 +374,14 @@ h3 {
 #world-map-container div {
     width: 20%;
     float: left;
-    padding: 30px;
+    padding-top: 90px;
+    padding-left: 30px;
     height: 400px;
-    background-color: #6868684f;
+    padding-right: 30px;
+
     box-sizing: border-box;
+   
+
 }
 
 @media screen and (max-width:850px) {
@@ -386,5 +390,23 @@ h3 {
         background-size: 80%;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+
+@media screen and (max-width:975px) {
+    #world-map-container div {
+        width: 100%;
+        clear: both;
+        height: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    #world-map-container {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
     }
 }
