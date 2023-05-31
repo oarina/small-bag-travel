@@ -1,6 +1,31 @@
 ![Image Description](./assets/images/website_presentation.jpg)
 [Small Bag Travels](https://oarina.github.io/small-bag-travel/) is a static website designed for an Irish travel blogger. The goal is to highlight to a reader three most intriguing journey recollections and redirect them to a full article so that they can enjoy bloggers deeper recital of his travels. The website wants to borrow from the style and feel of the Facebook blog so that blogger's personality can come through.  Reader can also fill the form or subscribe for updates.  
 # Tble of Contents
+1. <details open>
+    <summary><a href="#ux">UX</a></summary>
+
+    <ul>
+    <li><details>
+    <summary><a href="#goals">Goals</a></summary>
+
+    - [Visitor Goals](#visitor-goals)
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+    </details></li>
+
+    <li><details>
+    <summary><a href="#visual-design">Visual Design</a></summary>
+
+    - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colors](#colors)
+    - [Images](#images)
+    - [Styling](#styling)
+    </details></li>
+    </ul>
+</details>
+
 
 # UX
 ## Goals
@@ -59,11 +84,84 @@ Small Bag Travels Website filles those needs accordingly:
 
 ### Font
 
-* Primary Font - [Anton](https://fonts.google.com/specimen/Anton). Bold and strong font that is going on the logo and all the headings. 
-* Secondary Font - [Open Sans](https://fonts.google.com/specimen/Open+Sans). Light and gentle to contrast with the strong font. 
+* Primary Font - [Anton](https://fonts.google.com/specimen/Anton). Bold and strong font that is going on the logo and all the headings. Fallback is monoscape as it is takes up a similar size to Anton which shoudld not enterfere with text layout in containers and it is equally as strong. 
+* Secondary Font - [Open Sans](https://fonts.google.com/specimen/Open+Sans). Light and gentle to contrast with the strong font. Fallback is Sans Serif as it is one of the lighter browser safe fonts.
+
+### Logo
+
+* Logo is borrowed from the Facebook Page and is kept in text format to honor the original source. To give it pop - it is styled in Anton or monoscape while distinguished with a sharp color contrast and uppercase styling. 
+
+### Icons
+
+* Icons are taken from fontawesome.com and are perfectly fitting into the page as is. Since the primary colour is either black and white, only the bottom footer icons needed changing to white colour. Icons help break up the text and convey information with a visual language, especially in the world map section where stats need to be displayed.
+
+### Colours
+
+* Image of the blogger and a map were both inherited images that are positioned on the frot page. Extrapolating from those colours black in contrast with white fit the serious feel of the topic while both map and an item on bloggers back had an orange color present. It made sense to use that color as a contrast with black. 
+* To tie things together buttons and links also change colour to orange. The menu item also lets you know in organ the page you are on. 
+* The body of the website have a very faint off-white colour that has a light touch of orange to pair it with the active page, map and a rim around blogger.
+* To elevate the elements I am using a grey shading that gentle disperses around the edges of footer, header, page sections. This gives the items a little pop while also keeping them small and discrete.
+* Test is either white on black or black on white or off white. This give maximum readibility while touches like submit buttons hight up in orange. 
+* I have also added the same shading of grey around the submit and subscribe buttom to activate only when the button is clicked so that it is clear to the user that they have definitely clicked the button giving them an illusion of an extra dimension. 
 
 
+### Styling 
 
+* Main focus is to attract the user to the intro and the sample material. I have made every part of an article introductory snippet section (image, heading, caption and text) clickable. So that the user can intuitively click on what they like and get there. 
+* Also header and footer are both present in all pages at all times so that the user never needs to scroll to the top or bottm. However, the chose is to keep both header and footer small and minimal so that it would not distract from reading the content. 
+* The shadow pop - takes away the edginess of the harsh black and white color layout. 
+* Header logo and menu items are designed to collapse onto each other to accomodate for a mobile phone. 
+* Even though, majority of the userbase so far is in Ireland, extra accomodation has been made to keep in mind that old and new, small and big devices can review this content from different countires. 
+* Design is mobile first. All the content can easily sit in a smal 5 or 6 inch screen both IOS and Android. This is also where the header and footer are more useful since the user will navigate easiy no matter where they are on the website. 
+
+
+# Features
+## Page Elements
+### All Pages
+#### Navbar
+![Full navar](./assets/images/website_navbar_full.png)
+
+![Mobile navar](./assets/images/website_navbar_highlight.png)
+
+* Navbar is minimalist with a light shade and as the image shrinks navigation menu items collapse under the logo. 
+* When you are on an article page - it will be shown in bright orange colour so that you are aware where you are at all times.
+* Header and footer are not exactly black, so as you are scrolling through content there will be a faint silouette going under the header and the footer - it offsets the harshnes of just black and feels a little bit more mysterious and classy.
+
+#### Footer
+![Footer](./assets/images/website_footer.png)
+
+* Tucked away it is discretely always sitting at the bottom. User has access to two provided contacts - Facebook Page and an email. Like navigation bar it will light up orange if you click on it. 
+
+#### Intro Section
+![Intro Mobile](./assets/images/website_intro_desktop.png)
+![Intro Desktop](./assets/images/website_intro_mobile.png)
+
+* Intro was designed with mobile in mind first, however, bloggers image and the solgan that is the heart of the blog comfortably fits in either screen. 
+* The message sits under the blogger in a mobile, but in a desktop it would be horisontal instead. 
+* Minimalist orange accent around the blogger is chosen to accentuate the main character. The slogan is styled togethe with a logo and is the boldest text on a page. 
+
+#### Article snippets
+
+![Intro Landscape](./assets/images/website_snippets_horizontal.png)
+![Intro Mobile](./assets/images/website_snippets_mobile.png)
+
+* Article snippet/teaser section wants to distingwish itself from the above and attract attention. That is why it is white on black. When it collapses for mobile it retains the continued shape from the collaped header items. This will make it more seamless and put togethe, while you can still feel the scrolling as text falls under header and footer.
+* Every single item inse the snippet is clickable so you can intutively jump to the article of choise.
+
+#### Trip section
+
+![Trip Section Landscape](./assets/images/website_trip_horizontal.png)
+![Trip Section Mobile](./assets/images/website_trip_mobile.png)
+
+* This section is aiming to maximise the provided image of all the countries that blogger has visited. Those are in orange. 
+* Section is separated into 5 parts that give light stats to the previous trips made by the blogger acompanied with icons for easier readability. 
+* It is now back to black font on off-white which pops the light statistics in this section.
+* The backround image is set so that when on mobile device the zoom will occur on the orange countries that blogger visited.
+
+#### Articles
+
+
+#### Form
 
 # Testing 
 
