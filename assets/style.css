@@ -11,23 +11,23 @@
 /* --------------------------------------------Basic body and logo design */
 
 body {
-    font-family: Sans-serif; 
+    font-family: Sans-serif;
     /* when applying planned pair Anton and Open Sans - it does not actually look good. It is hard
     to read Open Sans font. I am leaving sans-serif instead */
     background-color: #ef87000b;
- 
+
 }
 
 #logo,
 h2 {
     padding: 2px;
     /* After testing in different screen sizes - sansung galaxy 8+ 
-    was operating correctly only up to 4px padding and under*/ 
+    was operating correctly only up to 4px padding and under*/
     border: 6px;
-   font-family: monospace;
+    font-family: monospace;
 
-   
-   /* BUG: Anton font will not load in my mobile phone, but nor will sans-serif. It does not seem to
+
+    /* BUG: Anton font will not load in my mobile phone, but nor will sans-serif. It does not seem to
    be compatable with IOS.
    
    1. Testing out monoscape - it is ok, testing fantasy. Old setting was for Anton and fallback sans-serif.
@@ -39,16 +39,16 @@ h2 {
     text-transform: uppercase;
     /* BUG: This colour would override the hover rule color: bisque;
     by targeting the color for <a> under navigation class that fixes the issue--*/
-    text-shadow: 0px  1px 0px  #68686862;
+    text-shadow: 0px 1px 0px #68686862;
     /* Had to recude shadow and reduce opacity after testing on a small
-    device - it has a bad visibility. */ 
+    device - it has a bad visibility. */
 }
 
 h1 {
     letter-spacing: 7px;
 }
 
-/*---------------------------------------------Footer */ 
+/*---------------------------------------------Footer */
 footer {
     position: fixed;
     left: 0;
@@ -57,13 +57,13 @@ footer {
     /* Sticky positon with bottom 0 still has the footer in a middle of a page. 
     Position fixed with left, right, bottom as 0 has a sticky property !*/
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.9); 
-    box-shadow: 0 0 20px 0  #686868;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px 0 #686868;
     padding: 6px;
 
 }
 
-footer a { 
+footer a {
     color: #F6F1F1;
     padding: 6px;
     margin: 6px;
@@ -77,7 +77,7 @@ header {
     top: 0;
     /* Sticky positon only works on header and with top 0 !*/
     background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 0 20px 0  #686868;
+    box-shadow: 0 0 20px 0 #686868;
     z-index: 1;
     /* header has a z-index higher than a form which means that it will 
     display over the form if they are overlapping */
@@ -118,13 +118,13 @@ header {
 }
 
 a:hover {
-    color:  #ef8600;
+    color: #ef8600;
     /* if I don't target a under navigation ID the hover rule will 
                break and not apply*/
 }
 
 .menu-container #active {
-    color:  #ef8600 ;
+    color: #ef8600;
     /* This will color the menu item and show you the pauge user is currently on */
 }
 
@@ -146,12 +146,12 @@ a:hover {
     justify-content: space-around;
     /*this will always position brian and slogan evenly no matter what screen
     width you change it to */
-    align-items: center; 
+    align-items: center;
 
     max-width: 1800px;
     /* when I set max width for some reason container goes to the left side. */
     margin: 0 auto;
-    /* margin 0 auto has fixed the issue. */ 
+    /* margin 0 auto has fixed the issue. */
 }
 
 .brian {
@@ -180,7 +180,7 @@ a:hover {
 
 .slogan-container h2 {
     letter-spacing: 3px;
-    text-shadow: 0px  2px 0px  #686868 ; 
+    text-shadow: 0px 2px 0px #686868;
     /*
     giving slogan a stenciled grafiti looking shadow to also
     match with the header and footer shadow */
@@ -190,11 +190,13 @@ a:hover {
     .intro-container {
         flex-direction: column;
     }
+
     .slogan-container {
         width: 307px;
         height: 307px;
         text-align: justify;
     }
+
     /* Adding rule to collapse slogan under the picture in order not to skew the text */
 }
 
@@ -206,10 +208,10 @@ a:hover {
     width: 350px;
     height: 450px;
     box-shadow: 0 0 20px 0 #686868;
-     /* adding a gentle black shadow around the box */
+    /* adding a gentle black shadow around the box */
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%); 
+    transform: translate(-50%, -50%);
     /*  putting the form in a centr by suggesting 50% top bottn and transforing */
     position: absolute;
     display: flex;
@@ -219,78 +221,80 @@ a:hover {
     z-index: 0;
 }
 
-#input-field {
+.input-field {
     width: 208px;
     height: 30px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid  #686868;
-    border-radius: 5px; /* gives the field edges a little bit of a curve */
+    border: 1px solid #686868;
+    border-radius: 5px;
+    /* gives the field edges a little bit of a curve */
     outline: none;
 }
 
 #textarea {
-    border-radius:7px;
+    border-radius: 7px;
     margin-top: 20px;
     padding-left: 10px;
     padding-right: 20px;
-    border: 1px solid  #686868;
+    border: 1px solid #686868;
 }
 
 #submit {
-    background-color:  #686868 ;
+    background-color: #686868;
     width: 100px;
     height: 30px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid  #686868;
+    border: 1px solid #686868;
     border-radius: 5px;
-    color: white;   
+    color: white;
 }
 
 #submit:hover {
-    color:  #000000;
+    color: #000000;
     background-color: #ef8600;
     /* button will change colour when you hover over it for better UX */
-} 
+}
 
 #submit:active {
-    box-shadow: 0 0 20px 0 #686868; 
+    box-shadow: 0 0 20px 0 #686868;
     /* A cast shadow at the button click will the the user know they have
     defenitely clicked this button */
 }
+
 /*----------------------------------------------Articles */
-  .article {
+.article {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
+}
 
-  .article p {
+.article p {
     margin-bottom: 20px;
-  }
+}
 
-  .article h2 {
+.article h2 {
     margin-bottom: 20px;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     text-align: center;
-  }
-  
-  .image-container img {
+}
+
+.image-container img {
     max-width: 100%;
     height: auto;
-  }
-  
-  .image-container p {
-    font-style: italic;
-  }
+}
 
-  /*---------------------------------------------Subscription */
-  .subscription-container {
+.image-container p {
+    font-style: italic;
+}
+
+/*---------------------------------------------Subscription */
+.subscription-container {
     padding: 16px;
     padding-bottom: 6px;
     margin: 16px;
@@ -299,38 +303,40 @@ a:hover {
     margin: 0 auto;
     text-align: center;
     align-items: center;
-  }
+}
 
-  #subscribe-button {
-    background-color:  #686868;
+#subscribe-button {
+    background-color: #686868;
     width: 100px;
     height: 30px;
     margin-top: 20px;
     border-radius: 5px;
     color: white;
-    /* Copying the overal staylle from my form submit button */   
-  }
+    /* Copying the overal staylle from my form submit button */
+}
 
-  #subscription-input-field {
+#subscription-input-field {
     width: 208px;
     height: 30px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid  #686868;
-    border-radius: 5px; /* gives the field edges a little bit of a curve */
+    border: 1px solid #686868;
+    border-radius: 5px;
+    /* gives the field edges a little bit of a curve */
     outline: none;
-  }
+}
 
-  #subscribe-button:hover {
-    color:  #000000;
+#subscribe-button:hover {
+    color: #000000;
     background-color: #ef8600;
-} 
+}
 
-    #subscribe-button:active {
-        box-shadow: 0 0 20px 0 #686868; 
+#subscribe-button:active {
+    box-shadow: 0 0 20px 0 #686868;
     /* using the same style as developed in the form */
-    }
+}
+
 /*-----------------------------------------Snippet/article inroduction section*/
 .snippet {
     width: 300px;
@@ -343,35 +349,37 @@ a:hover {
 .snippet-container {
     margin-top: 36px;
     margin-bottom: 36px;
-    background-color: rgba(0, 0, 0, 0.9); 
-    display: flex; 
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
     border-radius: 15px;
-    box-shadow: 0 0 20px 0 #686868; 
+    box-shadow: 0 0 20px 0 #686868;
     justify-content: space-between;
     max-width: 1800px;
     /* when I set max width for some reason container goes to the left side. */
     margin: 0 auto;
-    /* margin 0 auto has fixed the issue. */ 
+    /* margin 0 auto has fixed the issue. */
 }
 
-.snippet a, .snippet p, .snippet h3 {
+.snippet a,
+.snippet p,
+.snippet h3 {
     color: white;
 }
 
 .image-caption {
-   font-size: small;
+    font-size: small;
 }
 
 /*------------------------Hover rule in the above section*/
 .snippet a:hover {
-    color:  #ef8600;
+    color: #ef8600;
 
     /* if I don't target a under navigation ID the hover rule will 
                break and not apply*/
 }
 
 .snippet p:hover {
-     color:  #ef8600;
+    color: #ef8600;
 
 }
 
@@ -387,7 +395,7 @@ a:hover {
     .snippet-container {
         flex-direction: column;
         align-items: center;
-    }   
+    }
 }
 
 /*-------------------------World map section */
@@ -402,7 +410,7 @@ a:hover {
     width: 100%;
     height: 300px;
     border-radius: 15px;
-    box-shadow: 0 0 20px 0 #686868; 
+    box-shadow: 0 0 20px 0 #686868;
 }
 
 #world-map-container div {
