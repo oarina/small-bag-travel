@@ -4,20 +4,39 @@
 <details>
 <summary><a href="#ux">UX</a></summary>
 
-- [Reader Goals](#reader-goals)
+- [Table of Contents](#table-of-contents)
+- [UX](#ux)
+  - [Reader Goals](#reader-goals)
     - [Target readers](#target-readers)
     - [User Goals](#user-goals)
       - [Small Bag Travels Website fills those needs accordingly](#small-bag-travels-website-fills-those-needs-accordingly)
-      - [Blogger Goals](#blogger-goals)
-- [Blogger Requirement](#blogger-requirement)
-- [User Stories](#user-stories)
-- [Visual Design](#visual-design)
-  - [Wireframes](#wireframes)
-  - [Font](#font)
-  - [Logo](#Logo)
-  - [Icons](#Icons)
-  - [Colours](#Colours)
-  - [Stylig](#Features)
+    - [Blogger goals](#blogger-goals)
+    - [Blogger requirement](#blogger-requirement)
+  - [User Stories](#user-stories)
+  - [Visual Design](#visual-design)
+    - [Wireframes](#wireframes)
+    - [Font](#font)
+    - [Logo](#logo)
+    - [Icons](#icons)
+    - [Colours](#colours)
+    - [Styling](#styling)
+- [Features](#features)
+  - [Navbar](#navbar)
+  - [Footer](#footer)
+  - [Intro Section](#intro-section)
+  - [Article snippets](#article-snippets)
+  - [Trip section](#trip-section)
+  - [Articles](#articles)
+  - [Form](#form)
+- [Tech](#tech)
+  - [Technologies Used](#technologies-used)
+  - [Libraries](#libraries)
+  - [Platforms](#platforms)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [Bugs](#bugs)
+    - [Contact](#contact)
+    - [Credits](#credits)
 </details>
 <details>
 <summary><a href="#features">Features</a></summary>
@@ -37,6 +56,7 @@
  - [Libraries](#libraries)
  - [Platforms](#platforms)
  - [Testing](#testing)
+ - [Deployment](#deployment)
  - [Bugs](#bugs)
      - [Contact](#contact)
       - [Credits](#credits)
@@ -207,7 +227,24 @@
 * Tested in DevTools and on Iphone DE, Samsung Tablet, Apple Ipod, OnePlus phone and Macbook Pro. 
 * Site was shared with friends and family for further testing and feedback.
 * Each link, button and feature were checked in the above devices and environments horizontally and vertically. 
+* Tried filling out the form in many different ways, checking if no @ will work, checking if I can submit empty input
+* Checking if submission works and clicking on Brian's picture to confirm that the hyperlink works in it. 
 
+## Deployment
+
+To see this project live, I've used GitHub Pages. Here's how I did it:
+
+- First, I went to my project's GitHub repository at [Small Bag Travel Github Page](https://github.com/oarina/small-bag-travel).
+- In the repository, I clicked on the 'Settings' tab.
+- I scrolled down to the 'GitHub Pages' section and used the 'Source' drop-down menu to select the 'Main' branch.
+- After clicking 'Save', GitHub published my site and gave me a URL.
+- You can visit the live site at [Small Bag Travels](https://oarina.github.io/small-bag-travel/). It's always exciting to see your work on the web!
+
+If you're curious about making your own version or adding improvements, here's a simple way to start:
+
+- Click on the 'Fork' button on the top right of the repository page to make your own copy.
+- If you want to play around with the code on your computer, use the 'Clone or download' button to get a copy. You'll need a bit of Git knowledge for this part.
+- Feel free to try out new things in the code. It's a great way to learn!
 
 ## Bugs
 * Mobile IOS devices do not load Anton font correctly. 
@@ -228,5 +265,6 @@
             alt="Valid CSS!" />
     </a>
 </p>
+
 
 
